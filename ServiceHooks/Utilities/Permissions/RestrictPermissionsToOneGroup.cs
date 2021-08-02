@@ -24,7 +24,7 @@ namespace Microsoft.TeamServices.Samples.ServiceHooks
 
             Console.WriteLine("WARNING! This operation will remove the permissions.\n\n  Are you sure you want to continue (Y/N)?");
             int confirmChar = Console.In.Read();
-            if (confirmChar != 'y' || confirmChar != 'Y')
+            if (Convert.ToChar(confirmChar) != 'y' || Convert.ToChar(confirmChar) != 'Y')
             {
                 return;
             }
